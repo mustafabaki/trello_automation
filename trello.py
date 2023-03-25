@@ -5,9 +5,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 # Trello API credentials
-TRELLO_API_KEY = os.environ.get('TRELLO_API_KEY')
-TRELLO_API_TOKEN = os.environ.get('TRELLO_API_TOKEN')
-TRELLO_BOARD_ID = os.environ.get('TRELLO_BOARD_ID')
+TRELLO_API_KEY = os.environ["TRELLO_API_KEY"]
+TRELLO_API_TOKEN = os.environ["TRELLO_API_TOKEN"]
+TRELLO_BOARD_ID = os.environ["TRELLO_BOARD_ID"]
 
 
 # Trello API URLs
