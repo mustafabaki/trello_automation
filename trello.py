@@ -51,13 +51,13 @@ def create_trello_card(list_id, card_name, card_desc=''):
 
 
 
-def move_trello_card(card_id, board_id, list_id):
+def move_trello_card(card_id, list_id):
     # Move a Trello card to a new list
     url = f'{TRELLO_API_BASE_URL}/cards/{card_id}'
     params = {
         'key': TRELLO_API_KEY,
         'token': TRELLO_API_TOKEN,
-        'idBoard': board_id,
+        'idBoard': TRELLO_BOARD_ID,
         'idList': list_id
     }
     response = requests.put(url, params=params)
