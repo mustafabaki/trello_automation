@@ -28,4 +28,5 @@ for item in load_commits():
 # generate a card for trial purposes
 
 list_id = get_trello_list_id("Done")
-create_trello_card(list_id=list, card_name="Test ...")
+
+print("list_id: ", list_id)
