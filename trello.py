@@ -64,7 +64,7 @@ def move_trello_card(card_id, list_id):
     if response.status_code != 200:
         print(f'Error moving card {card_id}: {response.text}')
     else:
-        print(f'Successfully moved card {card_id} to list {list_id} on board {board_id}')
+        print(f'Successfully moved card {card_id} to list {list_id} on board {TRELLO_BOARD_ID}')
 
 
 def get_card_id_by_name(card_name):
