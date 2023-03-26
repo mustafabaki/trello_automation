@@ -15,10 +15,9 @@ for item in load_commits():
         # move the card to doing list ...
         list_id = get_trello_list_id("Doing")
         commit_message = item.split(":")
-        if len(commit_message) == 1:
-            message = commit_message[0]
-        else:
-            message = commit_message[1].trim()
+        message = commit_message[1].trim()
+        if ':' not in commit_message:
+            raise ValueError("the commit message is not a valid commit message")
         card_id = get_card_id_by_name(message)
         move_trello_card(card_id=card_id, list_id=list_id)
     
