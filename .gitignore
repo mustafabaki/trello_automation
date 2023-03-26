@@ -2,3 +2,4 @@
 .env
 __pycache__/trello.cpython-310.pyc
 *.pyc
+*.pyc
