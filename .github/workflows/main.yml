@@ -26,7 +26,7 @@ jobs:
       - name: Run script
         env:
           GITHUB_OWNER: "mustafabaki"
-          GITHUB_REPO: "mustafabaki"
+          GITHUB_REPO: "trello_automation"
           TRELLO_API_KEY: ${{ secrets.TRELLO_API_KEY }}
           TRELLO_API_TOKEN: ${{ secrets.TRELLO_API_TOKEN }}
           TRELLO_BOARD_ID: ${{ secrets.TRELLO_BOARD_ID }}
