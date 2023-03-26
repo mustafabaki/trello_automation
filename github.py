@@ -16,8 +16,8 @@ def load_commits():
     # API endpoint for getting commits
     url = f'https://api.github.com/repos/{owner}/{repo}/commits'
 
-    # Parameters for API request: get last 10 commits
-    params = {'per_page': 10}
+    # Parameters for API request: get last  commit
+    params = {'per_page': 1}
 
     # Make the API request
     response = requests.get(url, params=params, auth=auth)
