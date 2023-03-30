@@ -27,4 +27,4 @@ jobs:
           TRELLO_API_TOKEN: ${{ secrets.TRELLO_API_TOKEN }}
           TRELLO_BOARD_ID: ${{ secrets.TRELLO_BOARD_ID }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python .github/workflows/test.py
+        run: python main.py
